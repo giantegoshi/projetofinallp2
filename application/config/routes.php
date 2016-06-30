@@ -49,11 +49,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-//lado esquerdo o que o usuario digitou
-$route['([A-Z]{3}-\d{4})'] = 'veiculo/visualizaVeiculo/$1';
-//$route['bemVindo'] = 'veiculo/bemVindo';
-$route['register/index'] = 'register/index';
-$route['default_controller'] = 'veiculo';
+$route['admin'] = 'admin/login';
+$route['admin/recuperaSenha'] = 'admin/recuperaSenha';
+
+$route['admin/home'] = 'admin/index';
+$route['admin/alterarHome'] = 'admin/alterarHome';
+
+$route['admin/sobre'] = 'admin/sobre';
+$route['admin/alterarSobre'] = 'admin/alterarSobre';
+
+$route['admin/formacao'] = 'admin/formacao';
+$route['admin/alterarFormacao'] = 'admin/alterarFormacao';
+$route['admin/inserirFormacao'] = 'admin/inserirFormacao';
+$route['admin/deletarFormacao'] = 'admin/deletarFormacao';
+
+$route['admin/trabalho'] = 'admin/trabalho';
+$route['admin/alterarTrabalho'] = 'admin/alterarTrabalho';
+$route['admin/inserirTrabalho'] = 'admin/inserirTrabalho';
+$route['admin/deletarTrabalho'] = 'admin/deletarTrabalho';
+
+$route['admin/contato'] = 'admin/contato';
+$route['inserirContato'] = 'principal/inserirContato';
+$route['admin/deletarContato'] = 'admin/deletarContato';
+
+$route['admin/usuario'] = 'admin/usuario';
+$route['admin/alterarUsuario'] = 'admin/alterarUsuario';
+
+
+$route['Sobre'] = 'principal/sobre';
+$route['Contato'] = 'principal/contato';
+$route['Trabalho'] = 'principal/trabalho';
+$route['Formacao'] = 'principal/formacao';
+$route['PDF'] = 'principal/pdf';
+$route['default_controller'] = 'principal/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
